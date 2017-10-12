@@ -13,23 +13,23 @@
 -- You should have received a copy of the GNU Affero General Public License
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ------------------------------------------------------------------------------AC
--- NPC Name: John Doe                                                    None --
--- NPC Job:  Insert profession here                                           --
+-- NPC Name: Celairhel Golweneth                                         None --
+-- NPC Job:  Priestess                                                        --
 --                                                                            --
--- NPC Race: human                      NPC Position:  0, 0, 0                --
--- NPC Sex:  male                       NPC Direction: south                  --
+-- NPC Race: Elf                        NPC Position:  0, 0, 0                --
+-- NPC Sex:  female                     NPC Direction: south                  --
 --                                                                            --
--- Author:   Insert your name here                                            --
+-- Author:   Dantagon                                                         --
 --                                                     easyNPC Parser v1.23.1 --
 --------------------------------------------------------------------------------
 
-name = "John Doe"
-race = human
-sex = male
+name = "Celairhel Golweneth"
+race = elf
+sex = female
 position = 0, 0, 0
 direction = south
 affiliation = "None"
-job = "Insert profession here"
+job = "Priestess"
 
 language = common
 language = human
@@ -38,8 +38,8 @@ autointroduce = on
 
 author = "Insert your name here"
 
-lookatDE = "Dieser NPC ist <Name> der <Beruf/Funktion>."
-lookatUS = "This NPC is <Name> the <profession/function>."
+lookatDE = "Dieser NPC ist Celairhel Golweneth die Priesterin."
+lookatUS = "This NPC is Celairhel Golweneth the priestess."
 useMsgDE = "Fasst mich nicht an!"
 useMsgUS = "Do not touch me!"
 wrongLangDE = "#me schaut verwirrt."
@@ -82,60 +82,46 @@ buySecondaryItems = 2, 3
 -- MANDATORY TRIGGERS
 
 -- Mandatory: Help
-"Help" -> inform("[Game Help] This NPC is <Name> the <profession/function>. Keywords: TRIGGER1, TRIGGER2, TRIGGER3, TRIGGER4, TRIGGER5.")
-"Hilfe" -> inform("[Spielhilfe] Dieser NPC ist <Name> der <Beruf/Funktion>. Schlüsselwörter: TRIGGER1, TRIGGER2, TRIGGER3, TRIGGER4, TRIGGER5.")
+"Help" -> inform("[Game Help] This NPC is Celairhel Golweneth the priestess. Keywords: Hello, Elara, God, Job, Runewick.")
+"Hilfe" -> inform("[Spielhilfe] Dieser NPC ist Celairhel Golweneth die Priesterin. Schlüsselwörter: Hallo, Elara, Gott, Job, Runewick.")
 
 -- Mandatory: General speech
-"Hello", "Greet", "Hail", "Good day", "Good morning", "Good evening", "Good night" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Grüß", "Gruß", "Grüss", "Gruss", "Guten Morgen", "Guten Tag", "Guten Abend", "Gute Nacht", "Mahlzeit", "Tach", "Moin", "Mohltied" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "Hiho", "Hallo", "Hey", "Greeb" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Hiho", "Hallo", "Hey", "Greeb" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"Farewell", "Bye", "Fare well", "See you" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Tschüß", "Tschüss", "Wiedersehen", "Gehab wohl" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "Ciao", "Adieu", "Au revoir", "Farebba" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Ciao", "Adieu", "Au revoir", "Farebba" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"How are you", "How feel", "How do you do" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Wie geht", "Wie fühlst", "Wie ist es ergangen", "Wie Befind" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"your name", "who are you", "who art thou" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"ihr name", "dein name", "wer bist du", "wer seid ihr", "wie heißt", "wie heisst" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"Hello", "Greet", "Hail", "Good day", "Good morning", "Good evening", "Good night" -> "Greetings. Is there something I can do for you?"
+"Grüß", "Gruß", "Grüss", "Gruss", "Guten Morgen", "Guten Tag", "Guten Abend", "Gute Nacht", "Mahlzeit", "Tach", "Moin", "Mohltied" -> "Sei gegrüßt. Kann ich irgendetwas für dich tun?"
+english, "Hiho", "Hallo", "Hey", "Greeb" -> "Greetings. Is there something I can do for you?"
+"Hiho", "Hallo", "Hey", "Greeb" -> "Sei gegrüßt. Kann ich irgendetwas für dich tun?"
+"Farewell", "Bye", "Fare well", "See you" -> "May Elara's wisdom guide you."
+"Tschüß", "Tschüss", "Wiedersehen", "Gehab wohl" -> "Möge Elaras Weisheit dich leiten."
+english, "Ciao", "Adieu", "Au revoir", "Farebba" -> "May Elara's wisdom guide you."
+"Ciao", "Adieu", "Au revoir", "Farebba" -> "Möge Elaras Weisheit dich leiten."
+"How are you", "How feel", "How do you do" -> "I am well."
+"Wie geht", "Wie fühlst", "Wie ist es ergangen", "Wie Befind" -> "Danke, gut."
+"your name", "who are you", "who art thou" -> "I am Celairhel Golweneth. It is nice to meet you."
+"ihr name", "dein name", "wer bist du", "wer seid ihr", "wie heißt", "wie heisst" -> "Ich heiße Celairhel Golweneth. Es freut mich dich zu treffen."
 
 -- Mandatory: Trade Hooks, use the trade consequence for traders
-"sell", "buy", "wares", "price", "trade", "purchase" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3.", trade
-"kauf", "waren", "preis", "Handel", "veräußer", "veräusser", "erwerb" -> "GERMAN1.", "GERMAN2.", "GERMAN3.", trade
+"sell", "buy", "wares", "price", "trade", "purchase" -> "The only thing I trade in is knowledge. If you are looking for material goods or wealth, the Runewick marketplace is east of here.",
+"kauf", "waren", "preis", "Handel", "veräußer", "veräusser", "erwerb" -> "Das einzige was ich handle ist Wissen. Solltest du aber nach materiellen Gütern or Wohlstand suchen, der Marktplatz Runewicks findet sich östlich von hier.",
 
 -- Mandatory: Catching quest triggers. Modify if the NPC does quests
-english, "quest", "mission" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"quest", "mission" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"task", "adventure", "order" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Auftrag", "Aufgabe", "Abenteuer", "Befehl" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+english, "quest", "mission" -> "I do not have a task for you at the moment."
+"quest", "mission" -> "Ich habe kein Task für du im moment."
+"task", "adventure", "order" -> "I do not have a task for you at the moment."
+"Auftrag", "Aufgabe", "Abenteuer", "Befehl" -> "Ich habe kein Task für du im moment."
 
 -- OPTIONAL TRIGGERS
 
 -- Optional: Small talk - The talk here should focus on possible questions. Feel free to add more!
-"profession" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"beruf" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "job" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"job" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"tell something" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"erzähl was", "erzähl etwas" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-
--- Optional: More small talk - add at least five triggers, e.g. about the profession of the NPC or his enviroment
-"YOURTRIGGER1" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"YOURTRIGGER2" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"YOURTRIGGER3" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"YOURTRIGGER4" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"YOURTRIGGER5" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"DEINTRIGGER1" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"DEINTRIGGER2" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"DEINTRIGGER3" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"DEINTRIGGER4" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"DEINTRIGGER5" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"profession" -> "I am a priestess of Elara. I tend to her manuscripts of wisdom within this library and to her altar. Things tend to get dusty in here from time to time."
+"beruf" -> "Ich bin Elara Priesterin. Ich kümmere mich hier in der Bücherei um ihre weisen Aufzeichnungen und um ihren Altar. Hier drinne verstauben Sachen schon mal."
+english, "job" -> "I am a priestess of Elara. I tend to her manuscripts of wisdom within this library and to her altar. Things tend to get dusty in here from time to time."
+"job" -> "Ich bin Elara Priesterin. Ich kümmere mich hier in der Bücherei um ihre weisen Aufzeichnungen und um ihren Altar. Hier drinne verstauben Sachen schon mal.."
 
 -- Optional: Gods - use the triggers of the god the NPC worships or fights
-"god" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Gott", "Götter" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "religion" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"religion" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"god" -> "There are many gods. Five elder and eleven younger to be precise. I am a follower of Elara myself. Which one do you wish for me to expound upon?"
+"Gott", "Götter" -> "Es gibt viele Götter. Fünf Alte und elf Junge wenn man es genau nimmt. Ich bin ein Jünger Elaras. Welchen davon soll ich dir genauer vorstellen?"
+english, "religion" -> "There are many gods. Five elder and eleven younger to be precise. I am a follower of Elara myself. Which one do you wish for me to expound upon?"
+"religion" -> "Es gibt viele Götter. Fünf Alte und elf Junge wenn man es genau nimmt. Ich bin ein Jünger Elaras. Welchen davon soll ich dir genauer vorstellen?"
 "faith" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
 "Glaube" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
 english, "Adron" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
@@ -189,23 +175,6 @@ english, "rosaline", "edwards" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
 english, "Cadomyr" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
 "Cadomyr" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
 
--- Optional: Main land factions
-english, "albar" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"albar" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "gynk", "gync" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"gync", "gynk" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "salkama" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"salkama" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-
--- Optional: Gobaith
-english, "Gobaith", "Gobiath" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Gobaith", "Gobiath" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-
--- Optional: Last catch - Think about keywords the player might say and that are not caught until here
-"my name" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"mein Name" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "<NPC first name>", "<NPC last name>" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"<NPC-Vorname>", "<NPC-Nachname>" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
 
 ------------------------------------------------------------------------------AC
 -- Cycle Texts - Messages spoken automatically in random intervals.
