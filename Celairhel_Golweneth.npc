@@ -32,7 +32,7 @@ affiliation = "None"
 job = "Priestess"
 
 language = common
-language = human
+language = elf
 defaultLanguage = common
 autointroduce = on
 
@@ -116,6 +116,18 @@ english, "quest", "mission" -> "I do not have a task for you at the moment."
 "beruf" -> "Ich bin Elara Priesterin. Ich kümmere mich hier in der Bücherei um ihre weisen Aufzeichnungen und um ihren Altar. Hier drinne verstauben Sachen schon mal."
 english, "job" -> "I am a priestess of Elara. I tend to her manuscripts of wisdom within this library and to her altar. Things tend to get dusty in here from time to time."
 "job" -> "Ich bin Elara Priesterin. Ich kümmere mich hier in der Bücherei um ihre weisen Aufzeichnungen und um ihren Altar. Hier drinne verstauben Sachen schon mal.."
+
+-- Optional: More small talk - add at least five triggers, e.g. about the profession of the NPC or his enviroment
+"YOURTRIGGER1" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
+"YOURTRIGGER2" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
+"YOURTRIGGER3" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
+"YOURTRIGGER4" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
+"YOURTRIGGER5" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
+"DEINTRIGGER1" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"DEINTRIGGER2" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"DEINTRIGGER3" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"DEINTRIGGER4" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"DEINTRIGGER5" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
 
 -- Optional: Gods - use the triggers of the god the NPC worships or fights
 "god" -> "There are many gods. Five elder and eleven younger to be precise. I am a follower of Elara myself. Which one do you wish for me to expound upon?"
