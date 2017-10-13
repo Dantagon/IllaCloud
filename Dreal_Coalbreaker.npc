@@ -82,32 +82,32 @@ buySecondaryItems = 2, 3
 -- MANDATORY TRIGGERS
 
 -- Mandatory: Help
-"Help" -> inform("[Game Help] This NPC is Dreal Coalbreaker the priest. Keywords: Hello, Irmorom, God, Job, ")
-"Hilfe" -> inform("[Spielhilfe] Dieser NPC ist Dreal Coalbreaker der Priester. Schlüsselwörter: TRIGGER1, TRIGGER2, TRIGGER3, TRIGGER4, TRIGGER5.")
+"Help" -> inform("[Game Help] This NPC is Dreal Coalbreaker the priest. Keywords: Hello, Irmorom, God, Job, Galmair.")
+"Hilfe" -> inform("[Spielhilfe] Dieser NPC ist Dreal Coalbreaker der Priester. Schlüsselwörter: Hallo, Irmorom, Gott, Job, Galmair.")
 
 -- Mandatory: General speech
-"Hello", "Greet", "Hail", "Good day", "Good morning", "Good evening", "Good night" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Grüß", "Gruß", "Grüss", "Gruss", "Guten Morgen", "Guten Tag", "Guten Abend", "Gute Nacht", "Mahlzeit", "Tach", "Moin", "Mohltied" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "Hiho", "Hallo", "Hey", "Greeb" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Hiho", "Hallo", "Hey", "Greeb" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"Farewell", "Bye", "Fare well", "See you" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Tschüß", "Tschüss", "Wiedersehen", "Gehab wohl" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-english, "Ciao", "Adieu", "Au revoir", "Farebba" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Ciao", "Adieu", "Au revoir", "Farebba" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"How are you", "How feel", "How do you do" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Wie geht", "Wie fühlst", "Wie ist es ergangen", "Wie Befind" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"your name", "who are you", "who art thou" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"ihr name", "dein name", "wer bist du", "wer seid ihr", "wie heißt", "wie heisst" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+"Hello", "Greet", "Hail", "Good day", "Good morning", "Greetin's"
+"Grüß", "Gruß", "Grüss", "Gruss", "Guten Morgen", "Guten Tag", "Guten Abend", "Gute Nacht", "Mahlzeit", "Tach", "Moin", "Mohltied" -> "Tach."
+english, "Hiho", "Hallo", "Hey", "Greeb" -> "Greetin's."
+"Hiho", "Hallo", "Hey", "Greeb" -> "Tach."
+"Farewell", "Bye", "Fare well", "See you" -> "Irmorom be with ya."
+"Tschüß", "Tschüss", "Wiedersehen", "Gehab wohl" -> "Tschüß."
+english, "Ciao", "Adieu", "Au revoir", "Farebba" -> "Irmorom be with ya."
+"Ciao", "Adieu", "Au revoir", "Farebba" -> "Tschüß."
+"How are you", "How feel", "How do you do" -> "Oh, I’m doin’ fairly well."
+"Wie geht", "Wie fühlst", "Wie ist es ergangen", "Wie Befind" -> "Danke der Nachfrage."
+"your name", "who are you", "who art thou" -> "I am Dreal Coalbreaker."
+"ihr name", "dein name", "wer bist du", "wer seid ihr", "wie heißt", "wie heisst" -> "Ich bin Dreal Coalbreaker."
 
 -- Mandatory: Trade Hooks, use the trade consequence for traders
-"sell", "buy", "wares", "price", "trade", "purchase" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3.", trade
-"kauf", "waren", "preis", "Handel", "veräußer", "veräusser", "erwerb" -> "GERMAN1.", "GERMAN2.", "GERMAN3.", trade
+"sell", "buy", "wares", "price", "trade", "purchase" -> "I'm no merchant. Ya can find ‘em in the marketplace."
+"kauf", "waren", "preis", "Handel", "veräußer", "veräusser", "erwerb" -> "Ich bin kein Händler. Die findest du am Markt."
 
 -- Mandatory: Catching quest triggers. Modify if the NPC does quests
-english, "quest", "mission" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"quest", "mission" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
-"task", "adventure", "order" -> "ENGLISH1.", "ENGLISH2.", "ENGLISH3."
-"Auftrag", "Aufgabe", "Abenteuer", "Befehl" -> "GERMAN1.", "GERMAN2.", "GERMAN3."
+english, "quest", "mission" -> "I do not have a task for you at the moment."
+"quest", "mission" -> "Ich habe kein Task für du im moment."
+"task", "adventure", "order" -> "I do not have a task for you at the moment."
+"Auftrag", "Aufgabe", "Abenteuer", "Befehl" -> "Ich habe kein Task für du im moment."
 
 -- OPTIONAL TRIGGERS
 
